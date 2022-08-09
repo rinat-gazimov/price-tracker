@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ru.tracker.database.mapper.ProductMapper">
+
+    <resultMap id="product" type="ru.tracker.database.model.Product">
+        <id column="id" property="id"/>
+        <id column="name" property="name"/>
+        <id column="created" property="created"/>
+        <id column="changed" property="changed"/>
+    </resultMap>
+
+    <select id="getProducts"
+            resultMap="product"
+            useCache="false">
+        select * from mvideo.product
+    </select>
+
+</mapper>

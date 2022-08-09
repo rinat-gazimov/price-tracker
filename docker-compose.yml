@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  db_mvideo:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_DB: mvideo
+      POSTGRES_USER: mvideoUser
+      POSTGRES_PASSWORD: mvideoPass
+    ports:
+      - 5433:5432
+    command:
+      - "postgres"
+      - "-c"
+      - "wal_level=logical"

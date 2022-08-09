@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="1.0-create-table-user-preferences.xml"
+               author="Rinat"
+               runOnChange="false">
+
+        <sql splitStatements="false" stripComments="false"><![CDATA[
+                create table mvideo.product(
+                    id bigint PRIMARY KEY NOT NULL
+                );
+           ]]>
+        </sql>
+
+    </changeSet>
+
+</databaseChangeLog>

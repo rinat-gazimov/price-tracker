@@ -1,0 +1,9 @@
+spring:
+  liquibase:
+    enabled: true
+    change-log: liquibase/db.master.xml
+  datasource:
+    username: mvideoUser
+    password: mvideoPass
+    url: jdbc:postgresql://localhost:5433/mvideo
+    driver-class-name: org.postgresql.Driver
