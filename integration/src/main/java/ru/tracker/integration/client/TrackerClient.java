@@ -26,7 +26,7 @@ public class TrackerClient {
 
     private final ObjectMapper objectMapper;
 
-    public ListingResponse getProducts(String categoryId) throws IOException {
+    public ListingResponse getProducts(int categoryId) throws IOException {
 
         UriComponents builder = UriComponentsBuilder.fromHttpUrl("https://www.mvideo.ru/bff/products/listing")
                 .queryParam("categoryId", categoryId)

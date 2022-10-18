@@ -16,5 +16,6 @@ public class Category {
     private String name;
     private Date created;
     private Date changed;
+    private int extId;
 
 }

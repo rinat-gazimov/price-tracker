@@ -34,7 +34,7 @@ public class Controller {
     @GetMapping("/{categoryId}")
     BodyDto productIds(
             @Parameter(in = ParameterIn.PATH, description = "category id", required = true)
-            @PathVariable("categoryId") String categoryId) throws IOException {
+            @PathVariable("categoryId") int categoryId) {
         return service.getProductIds(categoryId);
     }
 

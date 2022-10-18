@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+
+    <changeSet id="1.0-alter-table-product"
+               author="Rinat"
+               runOnChange="false">
+
+        <sql splitStatements="false" stripComments="false"><![CDATA[
+                alter table mvideo.category
+                    add column ext_id int not null;
+
+                alter table mvideo.product
+                    add column ext_id int not null;
+
+                ]]>
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
