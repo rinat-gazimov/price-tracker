@@ -1,17 +1,16 @@
-package ru.tracker.integration;
-
+package ru.tracker.integration.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter @Setter
-public class ListingResponse {
+public class CurrentCategory {
 
-    private BodyDto body;
-
+    private String name;
+    private String value;
 
 }

@@ -1,16 +1,17 @@
-package ru.tracker.integration;
+package ru.tracker.integration.model;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
-@Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ListingDto {
+@Getter @Setter
+public class ListingResponse {
 
     private BodyDto body;
+
 
 }

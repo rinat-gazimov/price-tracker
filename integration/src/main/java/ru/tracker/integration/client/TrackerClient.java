@@ -7,9 +7,9 @@ import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
-import ru.tracker.integration.ListResponse;
-import ru.tracker.integration.ListingResponse;
-import ru.tracker.integration.ProductDto;
+import ru.tracker.integration.model.ListResponse;
+import ru.tracker.integration.model.ListingResponse;
+import ru.tracker.integration.model.ProductDto;
 
 import java.io.IOException;
 import java.io.InputStream;

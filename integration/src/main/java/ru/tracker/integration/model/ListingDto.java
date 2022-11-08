@@ -1,17 +1,16 @@
-package ru.tracker.integration;
+package ru.tracker.integration.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
 
+@Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter @Setter
-public class ListBodyResponse {
+public class ListingDto {
 
-    private List<ProductDto> products;
+    private BodyDto body;
 
 }

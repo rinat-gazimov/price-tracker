@@ -18,7 +18,6 @@
 
     <modules>
         <module>api</module>
-        <module>model</module>
         <module>database</module>
         <module>integration</module>
     </modules>
@@ -26,6 +25,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <start-class>ru.tracker.api.Application</start-class>
     </properties>
 
     <dependencyManagement>
@@ -64,5 +64,18 @@
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
     </dependencies>
+
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <mainClass>ru.tracker.api.Application</mainClass>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 
 </project>

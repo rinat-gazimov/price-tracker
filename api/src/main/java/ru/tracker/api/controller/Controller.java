@@ -12,9 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.tracker.database.service.ProductService;
-import ru.tracker.integration.BodyDto;
-import ru.tracker.integration.ProductDto;
+import ru.tracker.integration.model.BodyDto;
+import ru.tracker.integration.model.ProductDto;
 import ru.tracker.integration.service.TrackerService;
 
 import java.io.IOException;

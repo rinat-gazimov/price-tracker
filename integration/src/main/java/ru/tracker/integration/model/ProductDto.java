@@ -1,4 +1,4 @@
-package ru.tracker.integration;
+package ru.tracker.integration.model;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -4,15 +4,12 @@ package ru.tracker.integration.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
-import ru.tracker.database.model.Category;
 import ru.tracker.database.repository.CategoryRepository;
-import ru.tracker.integration.BodyDto;
-import ru.tracker.integration.ProductDto;
 import ru.tracker.integration.client.TrackerClient;
+import ru.tracker.integration.model.BodyDto;
+import ru.tracker.integration.model.ProductDto;
 
-import java.io.IOException;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -20,7 +17,7 @@ import java.util.stream.Collectors;
 public class TrackerService {
 
     private final TrackerClient client;
-    private CategoryRepository categoryRepository;
+    private final CategoryRepository categoryRepository;
 
     public BodyDto getProductIds(int categoryId){
         BodyDto bodyDto = null;
